@@ -48,7 +48,6 @@ module.exports = {
   divide
 };
 
-// Example usage
 if (require.main === module) {
   console.log('Sum:', add(5, 3));
   console.log('Difference:', subtract(5, 3));
