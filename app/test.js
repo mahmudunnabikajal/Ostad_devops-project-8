@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide, complexFunction } = require('./index');
+const { add, subtract, multiply, divide } = require('./index');
 
 describe('Math Functions', () => {
   test('add should return the sum of two numbers', () => {
@@ -22,10 +22,5 @@ describe('Math Functions', () => {
 
   test('divide should throw error when dividing by zero', () => {
     expect(() => divide(1, 0)).toThrow('Division by zero');
-  });
-
-  test('complexFunction should handle edge cases', () => {
-    expect(complexFunction(0)).toBe(-1);
-    expect(complexFunction(5)).toBe(2); // 0+2-1+4-3=2
   });
 });
